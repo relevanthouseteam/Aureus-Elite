@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aureus Elite | The Sovereign State of Performance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#c5b359",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#1a1a1a",
+                        "charcoal-deep": "#141414",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .luxury-gradient {
+            background: linear-gradient(180deg, rgba(26, 26, 26, 0.8) 0%, rgba(20, 20, 20, 1) 100%);
+        }
+        .marquee {
+            display: flex;
+            overflow: hidden;
+            user-select: none;
+            gap: 4rem;
+        }
+        .marquee-content {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: space-around;
+            gap: 4rem;
+            min-width: 100%;
+        }
+        .gold-border {
+            border-image: linear-gradient(to bottom, #c5b359, #403c2b) 1;
+        }
+        .stealth-overlay {
+            background: linear-gradient(to bottom, rgba(20, 20, 20, 0.3), rgba(20, 20, 20, 0.9));
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-white font-display overflow-x-hidden">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 border-b border-white/5 bg-background-dark/80 backdrop-blur-md">
+<div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="text-primary">
+<svg class="size-8" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-white text-xl font-bold tracking-[0.2em] uppercase">Aureus Elite</h2>
+</div>
+<nav class="hidden md:flex items-center gap-12">
+<a class="text-white/60 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="#philosophy">Philosophy</a>
+<a class="text-white/60 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="#hubs">The Hubs</a>
+<a class="text-white/60 hover:text-primary transition-colors text-sm font-medium uppercase tracking-widest" href="#partnerships">Partnerships</a>
+<button class="bg-primary text-background-dark px-6 py-2 rounded-sm text-sm font-bold uppercase tracking-widest hover:bg-white transition-all">Request Invitation</button>
+</nav>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/50 z-10"></div>
+<div class="absolute inset-0 stealth-overlay z-20"></div>
+<div class="w-full h-full bg-cover bg-center scale-105" data-alt="Cinematic aerial view of Dubai skyline at dusk" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDHqISgP578TdPszA3T5atrAbKRGCrRX3dqIBg7xdEdPk98zRd3yLqP3iN0SL1GyoQA8d3Pivn2sjHFfNQmoyRYcNARSFvDGqW-3lzf5gB3OCcrApzqq8_UDJNGXzC_XtHA7m82pTnOQ0QUIiLld-otPBrAk3kTbEuxBnQWhkbzUljKP34xAivwvCGWfammg5kcIjUfPcnt7UfhmR-n0iJXotzBYrxJt1U1urrqsQ4kVjMf4BvtXHN6kRh6XnyGvAc4l_SenA3wdZxp");'></div>
+</div>
+<div class="relative z-30 text-center px-4 max-w-4xl mx-auto">
+<p class="text-primary tracking-[0.5em] uppercase text-sm mb-6 animate-pulse">Established for the Sovereign</p>
+<h1 class="text-white text-5xl md:text-7xl font-light leading-tight tracking-tight mb-8">
+                The Sovereign State <br/><span class="font-bold italic">of Performance</span>
+</h1>
+<p class="text-white/70 text-lg md:text-xl font-light mb-12 max-w-2xl mx-auto leading-relaxed">
+                Biological optimization and high-end networking for the global elite. Experience stealth wealth in Dubai, Monaco, and Malta.
+            </p>
+<div class="flex flex-col md:flex-row items-center justify-center gap-6">
+<button class="bg-primary text-background-dark px-10 py-4 rounded-sm text-base font-bold uppercase tracking-[0.2em] hover:bg-white transition-all w-full md:w-auto">
+                    Request an Invitation
+                </button>
+<a class="text-white border-b border-primary/40 pb-1 hover:border-primary transition-all text-sm uppercase tracking-widest" href="#philosophy">Explore Philosophy</a>
+</div>
+</div>
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 animate-bounce">
+<span class="material-symbols-outlined text-white/30 text-3xl">keyboard_double_arrow_down</span>
+</div>
+</section>
+<!-- Philosophy Section (FeatureSection) -->
+<section class="py-24 px-6 bg-charcoal-deep" id="philosophy">
+<div class="max-w-7xl mx-auto">
+<div class="grid lg:grid-cols-2 gap-20 items-center">
+<div class="space-y-8">
+<div class="inline-block border-l-2 border-primary pl-4">
+<span class="text-primary uppercase tracking-[0.3em] text-xs font-bold">The Aureus Creed</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-bold leading-tight">Biological Sovereignty</h2>
+<p class="text-white/60 text-lg leading-relaxed font-light">
+                        Our philosophy centers on longevity, cognition, and absolute privacy. We treat human performance not as a hobby, but as a biological asset to be managed with the same rigor as a sovereign wealth fund.
+                    </p>
+<div class="pt-6">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined">verified_user</span>
+<span class="text-sm uppercase tracking-widest font-bold">Strictly Private Membership</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-background-dark/50 border border-white/5 p-8 rounded-xl hover:border-primary/30 transition-all group">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform">health_metrics</span>
+<h3 class="text-xl font-bold mb-3 uppercase tracking-wider">Longevity</h3>
+<p class="text-white/50 text-sm leading-relaxed">Advanced cellular optimization, senolytic protocols, and personalized regenerative medicine.</p>
+</div>
+<div class="bg-background-dark/50 border border-white/5 p-8 rounded-xl hover:border-primary/30 transition-all group">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform">psychology</span>
+<h3 class="text-xl font-bold mb-3 uppercase tracking-wider">Cognition</h3>
+<p class="text-white/50 text-sm leading-relaxed">Neurological enhancement and peak-state training for high-stakes decision making.</p>
+</div>
+<div class="bg-background-dark/50 border border-white/5 p-8 rounded-xl hover:border-primary/30 transition-all group">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform">encrypted</span>
+<h3 class="text-xl font-bold mb-3 uppercase tracking-wider">Privacy</h3>
+<p class="text-white/50 text-sm leading-relaxed">Complete anonymity and hyper-secure physical environments for the world's most visible individuals.</p>
+</div>
+<div class="bg-background-dark/50 border border-white/5 p-8 rounded-xl hover:border-primary/30 transition-all group">
+<span class="material-symbols-outlined text-primary text-4xl mb-4 group-hover:scale-110 transition-transform">hub</span>
+<h3 class="text-xl font-bold mb-3 uppercase tracking-wider">Networking</h3>
+<p class="text-white/50 text-sm leading-relaxed">A friction-less interface between the world's most powerful minds in curated social hubs.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- The Global Hubs (SectionHeader & Carousel) -->
+<section class="py-24 bg-background-dark overflow-hidden" id="hubs">
+<div class="max-w-7xl mx-auto px-6 mb-16">
+<h2 class="text-primary uppercase tracking-[0.4em] text-xs font-bold mb-4 text-center md:text-left">Operational Theaters</h2>
+<div class="flex flex-col md:flex-row justify-between items-end gap-6">
+<h3 class="text-3xl md:text-5xl font-bold max-w-xl">Global Hubs for the High-Net-Worth Elite</h3>
+<p class="text-white/40 text-sm uppercase tracking-widest border-b border-white/10 pb-2">Dubai • Monaco • Malta</p>
+</div>
+</div>
+<div class="flex overflow-x-auto pb-12 px-6 lg:px-24 snap-x no-scrollbar">
+<div class="flex gap-8">
+<!-- Dubai Card -->
+<div class="snap-center min-w-[320px] md:min-w-[450px] group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-6">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all z-10"></div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Futuristic luxury architecture in Dubai" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB9A0VoEXI0kI6zqKgIprDhg--m-kho4wwQy0lh5zB62Rg6bYwLAbkEqepFf4VJ0GEjD45aZxDTpCEXbBaMaewweNCmw9ONtpaFw42wUNIIqsRQ1MFYb5hngsUfQTKU7tmPtVxFM1KPXrwD3RjXsb7sNEN3Pmsu5aByd8m7AVmFJ3BUsfyiE71u8HtoGZBZnt3F33XtbkihUOvTGxBLgSlmiMTV8vzME1DybQKl2Yyuz1YlGlh84AprisCCUsxq0a6xxuxYAZ1aX6H-");'></div>
+<div class="absolute bottom-0 left-0 p-8 z-20">
+<span class="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-2 block">The Middle East</span>
+<h4 class="text-3xl font-bold mb-2">Dubai: The Peak</h4>
+</div>
+</div>
+<div class="px-2">
+<p class="text-white/60 font-light leading-relaxed">High-rise biological optimization within the Burj district. A vertically integrated sanctuary of bio-hacking and cognitive flow.</p>
+</div>
+</div>
+<!-- Monaco Card -->
+<div class="snap-center min-w-[320px] md:min-w-[450px] group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-6">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all z-10"></div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Luxury yacht harbor in Monaco" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWL8nOf4RWN2ux1qWtb9f4XUq1pqc4bc6K1yvvK92c8Hdn3leka_e48-Fpk0VP_FJEtBc2CID4ygPBycZIOoqtwfmOvdKnUH7wl4CFnybqglHbdrAjclU65-3swVcFMIhyKnUbkh_NsuF0hH9gnrhSvh_5S7zWQGXXtXavOyVUIfEgRaL6gv_ATc5CPgDEYQpovSDsL7yAFv4t5C663qzvKwbVr_DaoG2kIhefNRnIQGAWR9VoaC-NbUA9_6U9FkVzjfw44DG_wqad");'></div>
+<div class="absolute bottom-0 left-0 p-8 z-20">
+<span class="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-2 block">The Riviera</span>
+<h4 class="text-3xl font-bold mb-2">Monaco: The Port</h4>
+</div>
+</div>
+<div class="px-2">
+<p class="text-white/60 font-light leading-relaxed">Coastal recovery and elite social integration. Our Port-side hub specializes in hyperbaric therapy and Mediterranean-protocol longevity.</p>
+</div>
+</div>
+<!-- Malta Card -->
+<div class="snap-center min-w-[320px] md:min-w-[450px] group cursor-pointer">
+<div class="relative aspect-[4/5] overflow-hidden rounded-xl mb-6">
+<div class="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-all z-10"></div>
+<div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Ancient limestone architecture in Malta" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdHWWdMcOh4P2Xp9I9j55Driwqs4fLIz27KVWyXux4f5xpNybG6etXR8XZ8WgBtKtWzgLRL1FXJpBdKuIDbJXIwKkGtE16YtjftEUW-zPM72QJgtp6SGoU-MD0BslAQZc53qTkXUSKRFnPcWR2p8XxJaplKocqDG3ZHUGHoObyo65wSH1saarrD-f6kvsR8PT74qoqEV3CbzY5Cn3MsA_WSmeYosCaLh1CQBSs9jzsdEwrAvW7SiH5fvUeOR2UYFbgiRiu2AHu6CrT");'></div>
+<div class="absolute bottom-0 left-0 p-8 z-20">
+<span class="text-primary text-xs font-bold tracking-[0.3em] uppercase mb-2 block">The Fortress</span>
+<h4 class="text-3xl font-bold mb-2">Malta: The Vault</h4>
+</div>
+</div>
+<div class="px-2">
+<p class="text-white/60 font-light leading-relaxed">A secure performance sanctuary carved into history. The ultimate destination for those seeking total disconnection and radical rejuvenation.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Partnerships Marquee -->
+<section class="py-16 bg-charcoal-deep border-y border-white/5" id="partnerships">
+<div class="marquee">
+<div class="marquee-content opacity-30 grayscale hover:opacity-100 transition-opacity">
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">Technogym</span>
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">Loro Piana</span>
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">Clinique La Prairie</span>
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">NetJets</span>
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">Aman</span>
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">RM Sotheby's</span>
+</div>
+<!-- Duplicate for infinite effect -->
+<div class="marquee-content opacity-30 grayscale hover:opacity-100 transition-opacity">
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">Technogym</span>
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">Loro Piana</span>
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">Clinique La Prairie</span>
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">NetJets</span>
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">Aman</span>
+<span class="text-2xl font-bold tracking-[0.3em] uppercase">RM Sotheby's</span>
+</div>
+</div>
+</section>
+<!-- Lead Capture Section (The Invitation) -->
+<section class="py-32 bg-background-dark relative overflow-hidden">
+<div class="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary/5 via-transparent to-transparent"></div>
+<div class="max-w-4xl mx-auto px-6 relative z-10">
+<div class="border border-primary/30 p-10 md:p-20 text-center bg-charcoal-deep/50 backdrop-blur-sm rounded-sm">
+<h2 class="text-primary uppercase tracking-[0.4em] text-xs font-bold mb-8">Strictly by Referral</h2>
+<h3 class="text-4xl md:text-5xl font-light mb-8 leading-tight">Request a <br/><span class="italic font-bold">Private Consultation</span></h3>
+<p class="text-white/50 mb-12 max-w-lg mx-auto leading-relaxed">
+                    Aureus Elite is a private collective. Access is granted only to those who demonstrate a commitment to biological excellence and sovereign living.
+                </p>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left max-w-2xl mx-auto">
+<div class="space-y-2">
+<label class="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold ml-1">Full Name</label>
+<input class="w-full bg-white/5 border border-white/10 text-white p-4 focus:ring-1 focus:ring-primary focus:border-primary transition-all rounded-sm outline-none" placeholder="Your Excellency" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold ml-1">Corporate/Sovereign Affiliation</label>
+<input class="w-full bg-white/5 border border-white/10 text-white p-4 focus:ring-1 focus:ring-primary focus:border-primary transition-all rounded-sm outline-none" placeholder="Organization" type="text"/>
+</div>
+<div class="space-y-2 md:col-span-2">
+<label class="text-[10px] uppercase tracking-[0.2em] text-white/40 font-bold ml-1">Referral Code / Personal Request</label>
+<textarea class="w-full bg-white/5 border border-white/10 text-white p-4 focus:ring-1 focus:ring-primary focus:border-primary transition-all rounded-sm outline-none" placeholder="Briefly state your optimization goals..." rows="3"></textarea>
+</div>
+<button class="md:col-span-2 bg-primary text-background-dark py-5 font-bold uppercase tracking-[0.3em] hover:bg-white transition-all" type="button">Submit for Review</button>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-charcoal-deep py-20 border-t border-white/5">
+<div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 mb-8">
+<div class="text-primary">
+<svg class="size-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+<path d="M21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475" stroke="currentColor" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold tracking-[0.2em] uppercase">Aureus Elite</h2>
+</div>
+<p class="text-white/40 max-w-sm font-light leading-relaxed mb-6">
+                    Aureus Elite Global LTD. Registered in Malta. Operational hubs in Dubai Media City and Port Hercules, Monaco.
+                </p>
+<div class="flex gap-4">
+<a class="text-white/60 hover:text-primary transition-colors uppercase text-[10px] tracking-widest" href="#">Privacy Policy</a>
+<span class="text-white/10">|</span>
+<a class="text-white/60 hover:text-primary transition-colors uppercase text-[10px] tracking-widest" href="#">Terms of Service</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="text-sm font-bold uppercase tracking-[0.2em] text-primary">Philosophy</h4>
+<ul class="space-y-4 text-white/50 text-sm font-light">
+<li><a class="hover:text-white transition-colors" href="#">Cellular Health</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cognitive Flow</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Private Banking</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Stealth Wealth</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="text-sm font-bold uppercase tracking-[0.2em] text-primary">Contact</h4>
+<p class="text-white/50 text-sm font-light leading-loose">
+                    concierge@aureus-elite.private<br/>
+                    +356 21XX XXXX<br/>
+                    Valletta, Malta
+                </p>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-6 mt-20 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-[10px] text-white/20 uppercase tracking-[0.2em]">© 2024 Aureus Elite. All Rights Reserved.</p>
+<div class="flex items-center gap-2">
+<span class="size-2 bg-green-500 rounded-full animate-pulse"></span>
+<span class="text-[10px] text-white/20 uppercase tracking-[0.2em]">Systems Nominal: Optimal</span>
+</div>
+</div>
+</footer>
+</body></html>
